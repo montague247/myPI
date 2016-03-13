@@ -1,5 +1,4 @@
 #!/bin/sh -e
-.././update.sh
 sudo apt-get install avahi-utils libssl-dev libao-dev libpulse-dev libasound2-dev
 git clone https://github.com/abrasive/shairport.git ../shairport
 cd ../shairport
