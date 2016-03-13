@@ -1,5 +1,5 @@
 #!/bin/sh -e
 #./update.sh
 cd install
-./shairport.sh
+#./shairport.sh
 ./mopidy.sh

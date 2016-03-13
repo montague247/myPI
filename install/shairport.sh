@@ -9,4 +9,5 @@ sudo cp -r scripts/debian/* /etc/
 sudo adduser --system --disabled-login --ingroup audio shairport
 sudo cp config/shairport /etc/default/shairport
 cd install
-
+sudo update-rc.d shairport defaults
+sudo service shairport start
