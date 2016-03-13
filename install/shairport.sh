@@ -7,5 +7,6 @@ make
 sudo make install
 sudo cp -r scripts/debian/* /etc/
 sudo adduser --system --disabled-login --ingroup audio shairport
-cd myPI
 sudo cp config/shairport /etc/default/shairport
+cd install
+
