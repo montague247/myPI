@@ -6,6 +6,7 @@ sudo cp etc/mopidy/mopidy.conf /etc/mopidy/mopidy.conf
 sudo cp etc/network/if-up.d/iptables /etc/network/if-up.d/iptables
 sudo mkdir /music
 sudo mkdir /music/MusicBox
+sudo systemctl enable mopidy
 sudo pip install Mopidy-Local-SQLite
 sudo pip install Mopidy-Local-Images
 sudo pip install Mopidy-API-Explorer
