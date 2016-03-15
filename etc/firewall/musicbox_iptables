@@ -1,4 +1,12 @@
 # MusicBox Firewall
+*nat
+:PREROUTING ACCEPT [11:893]
+:INPUT ACCEPT [10:853]
+:OUTPUT ACCEPT [4:268]
+:POSTROUTING ACCEPT [4:268]
+-A PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 6680
+COMMIT
+
 *filter
 :INPUT DROP [1:72]
 :FORWARD DROP [0:0]
@@ -18,6 +26,5 @@
 # 554 rtsp, airplay
 # 5000-5005 tcp, 6000-6005 udp: shairport
 #DLNA UDP 1900, TCP 2869
-
 
 COMMIT
