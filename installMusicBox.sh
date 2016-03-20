@@ -1,8 +1,8 @@
 #!/bin/sh -e
 #./update.sh
 cd install
-#./shairport.sh
-#./mopidy.sh
+./shairport.sh
+./mopidy.sh
 cd ..
 sudo apt-get install iptables-persistent --yes
 sudo cp etc/firewall/musicbox_iptables /etc/iptables/rules.v4
